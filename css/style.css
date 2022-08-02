@@ -1,0 +1,265 @@
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+nav, footer {
+    background-color: #a50e2d;
+}
+
+ul {
+    padding: 10px 20px;
+    margin: 0;
+}
+
+a {
+    padding: 5px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 100px;
+    margin-right: 20px;
+    list-style: none;
+    display: inline-block;
+    color:white;
+    text-decoration: unset;
+}
+
+ul li a:active {
+    background-color: white;
+}
+
+
+ul li a:hover {
+    background-color: white;
+    color:black;
+}
+
+footer {
+    text-align: center;
+    color:white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Homepage  */
+#homeContent label   {
+    overflow: hidden;
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    top: 50vh;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 20px;
+}
+
+.homeArticle {
+    border: solid;
+    border-radius: 30px;
+    padding: 20px;;
+    margin: 20px;
+}
+
+#homeArticle label {
+    width: 70%;
+}
+
+#homeArticle header h1 {
+    margin-top: 0;
+}
+
+.homeAsidePhone {
+    display: none;
+}
+
+.homeAside, .homeAsidePhone {
+    width: 30%;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 30px;
+    margin-left: 15px;
+    float: right;
+    background-color: lightgray;
+}
+
+
+#contact a {
+    margin-right: 0;
+}
+
+
+
+/* Introduction */
+#introSection {
+    margin: 0 20px 20px 20px;
+}
+
+#introSection p {
+    border: solid;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+#introSection #oneITE {
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Schedule */
+#tableSchedule {
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tableScheduleSection {
+    border-radius: 30px;
+    border: solid;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#tableScheduleSection tr th {
+    border-right: solid black;
+    padding: 10px;
+    background-color: #a50e2d;
+    color: white;
+}
+
+#tableScheduleSection tr td {
+    border-right: solid;
+    padding: 10px;
+    border-top: solid 1px;
+}
+
+td:nth-child(4), th:nth-child(4) {
+    border-right: none!important;
+}
+
+
+/* Contact */
+#contactSection {
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 20px;
+    display: table;
+    width: 96%;
+    
+}
+
+#contactSection aside {
+    float: right;
+    width: 40%;
+    display: table-cell;
+    border: solid;
+    border-radius: 30px;
+}
+
+#contactSection div {
+    width: 55%;
+    border: solid;
+    padding: 2%;
+    border-radius: 30px;
+    padding-top: 92px;
+    padding-bottom: 92px;
+}
+
+#contactSection aside iframe {
+    border-radius: 30px;
+    border: solid 5px;
+}
+
+#mapPhone {
+    display: none;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    #forPhone {
+        display: block;
+    }
+
+    ul li a {
+        margin-right: 0;
+    }
+
+    
+    ul {
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    #homeContent label {
+        font-size: 15px;
+    }
+
+    .homeArticle label {
+        width: 100%;
+    }
+
+    .homeAside {
+        display: none;
+    }
+
+    .homeAsidePhone {
+        display: block;
+        float: none;
+        margin: 0px;
+        width: fit-content;
+        margin-top: 10px;
+        padding: 10px 20px;
+    }
+
+    /* Contact */
+    #contactSection {
+        width: 95%;
+    }
+
+    #contactSection aside {
+        display: none;
+    }
+
+    #mapPhone {
+        display: block;
+        margin-top: 20px;
+        border-top: solid;
+    }
+
+    #contactSection div {
+        padding: 0%;
+        padding-top: 20px;
+        width: 100%;
+        border: solid;
+        border-radius: 30px;
+    }
+
+    #contactSection div label {
+        padding-left: 20px;
+    }
+
+
+    #contactSection div iframe {
+        border-radius: 30px;
+    }
+
+}
